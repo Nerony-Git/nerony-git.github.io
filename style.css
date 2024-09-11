@@ -3,6 +3,7 @@
 ======================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+
 /* ========================
     Default Main Style
 ======================== */
@@ -25,7 +26,7 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: 80%;
     overflow-x: hidden;
 }
 
@@ -42,6 +43,13 @@ section {
 span {
     color: var(--main-color);
 }
+
+.title {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+
 
 /* ========================
     Header
@@ -60,6 +68,7 @@ span {
     z-index: 5;
 }
 
+/* Logo Start */
 .logo {
     font-size: 3rem;
     color: var(--text-color);
@@ -77,6 +86,9 @@ span {
     text-shadow: 0 0 25px var(--main-color);
 }
 
+/* Logo End */
+
+/* NavBar Start */
 .navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
@@ -98,8 +110,11 @@ span {
     display: none;
 }
 
+/* NavBar End */
+
+
 /* ========================
-    Home
+    Home Section
 ======================== */
 .home {
     display: flex;
@@ -158,6 +173,7 @@ span {
     max-width: 1000px;
 }
 
+/* Social Icons Start */
 .social-icons a {
     display: inline-flex;
     justify-content: center;
@@ -180,6 +196,9 @@ span {
     background-color: var(--main-color);
 }
 
+/* Social Icons End */
+
+/* Button Start */
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -219,6 +238,9 @@ span {
     color: black;
 }
 
+/* Button End */
+
+/* Text Animation Start */
 .text-animation {
     font-size: 34px;
     font-weight: 600;
@@ -308,15 +330,12 @@ span {
     }
 }
 
+/* Test Animation End */
+
+
 /* ========================
     Education Section
 ======================== */
-.title {
-    font-size: 8rem;
-    text-align: center;
-    margin: 5rem 0;
-}
-
 .education {
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -326,6 +345,7 @@ span {
     margin-bottom: 5rem;
 }
 
+/* Timeline Start */
 .timeline-items {
     max-width: 1200px;
     margin: auto;
@@ -409,6 +429,8 @@ span {
     font-weight: 300;
     line-height: 22px;
 }
+
+/* Timeline End */
 
 
 /* ========================

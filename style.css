@@ -789,11 +789,39 @@ span {
     padding: 0 15px;
 }
 
-.footer .copyright {
-    margin-top: 50px;
+.footer-info {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+}
+
+.copyright {
+    /* margin-top: 50px; */
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--text-color);
+}
+
+.scroll-top a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background: var(--main-color);
+    border-radius: 0.8rem;
+    transition: 0.5s ease-in-out;
+}
+
+.scroll-top a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.scroll-top a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
 }
 
 

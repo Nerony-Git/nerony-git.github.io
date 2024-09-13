@@ -69,6 +69,10 @@ span {
     z-index: 100;
 }
 
+.sticky {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, .2);
+}
+
 /* Logo Start */
 .logo {
     font-size: 3rem;
@@ -294,7 +298,7 @@ span {
 
     41%,
     60% {
-        content: "Front-End | Back-End Developer";
+        content: "Front | Back-End Developer";
     }
 
     61%,
@@ -304,7 +308,7 @@ span {
 
     81%,
     100% {
-        content: "Desktop | Mobile App Developer";
+        content: "Mobile App Developer";
     }
 }
 
@@ -379,7 +383,7 @@ span {
     Education Section
 ======================== */
 .education {
-    padding: 100px 15px;
+    /* padding: 100px 15px; */
     background: var(--second-bg-color);
 }
 
@@ -644,13 +648,11 @@ span {
 }
 
 .testimonial-item {
-    min-height: 550px;
-    max-width: 450px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     margin: 0 2rem;
-    padding: 30px 60px;
+    padding: 30px 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -845,19 +847,13 @@ span {
 /* ========================
     Mobile Responsiveness
 ======================== */
-@media(max-width:1285px) {
+@media (max-width:1285px) {
     html {
-        font-size: 50%;
-    }
-
-    .services-items {
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0 5rem;
+        font-size: 55%;
     }
 }
 
-@media(max-width:991px) {
+@media (max-width:991px) {
     .header {
         padding: 2rem 3%;
     }
@@ -888,6 +884,28 @@ span {
         padding-bottom: 7rem;
     }
 
+    .project {
+        padding-bottom: 7rem;
+    }
+
+    .project h2 {
+        margin-bottom: 3rem;
+    }
+
+    .project-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .service-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
     .testimonials .testimonials-items {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -901,7 +919,7 @@ span {
     }
 }
 
-@media(max-width:895px) {
+@media (max-width:895px) {
     #menu-icon {
         display: block;
     }
@@ -933,7 +951,7 @@ span {
 
     .home {
         flex-direction: column-reverse;
-        margin: 5rem 4rem;
+        margin: 5rem 2rem;
     }
 
     .home-content h3 {
@@ -941,8 +959,7 @@ span {
     }
 
     .home-content h1 {
-        font-size: 8rem;
-        margin-top: 3rem;
+        font-size: 5rem;
     }
 
     .home-content p {
@@ -951,14 +968,110 @@ span {
     }
 
     .home-img img {
-        width: 56vw;
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .education {
+        padding: 3rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        margin: 5rem 2rem;
+    }
+
+    .about img {
+        width: 70vw;
+        margin-top: 4rem;
     }
 
     .services h2 {
         margin-bottom: 3rem;
     }
 
-    .services-items {
+    .project h2 {
+        margin-bottom: 3rem;
+    }
+
+    .project-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-info {
+        padding: 2rem 2%;
+    }
+
+    .footer ul {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 617px) {
+    .service-items {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 45%;
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .service-items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+
+    .testimonial-item {
+        padding: 30px 20px;
+    }
+
+    .title {
+        font-size: 6rem;
+    }
+
+    .footer ul li {
+        padding: 0 6px;
+    }
+}
+
+@media (max-width: 365px) {
+    html {
+        font-size: 35%;
+    }
+
+    .home-img img {
+        width: 90vw;
+    }
+
+    .about-img img {
+        width: 90vw;
+    }
+
+    .footer-info {
+        flex-direction: column-reverse;
+    }
+
+    .footer-info p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .footer ul {
+        font-size: 13px;
+    }
+
+    .footer ul li {
+        padding: 0 2px;
     }
 }

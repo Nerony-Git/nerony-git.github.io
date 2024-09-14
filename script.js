@@ -30,7 +30,7 @@ menuIcon.onclick = () => {
     navBar.classList.toggle("active");
 }
 
-// Active Section Link
+// Scroll through sections active link
 let navLinks = document.querySelectorAll("header nav a");
 let sections = document.querySelectorAll("section");
 
@@ -50,7 +50,7 @@ window.onscroll = () => {
                     activeLink.classList.add("active");
                 }
             });
-        }
+        } 
     });
 
     // Sticky NavBar

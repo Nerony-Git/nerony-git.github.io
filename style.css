@@ -812,13 +812,33 @@ span {
 }
 
 .scroll-top a {
+    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 0.8rem;
     background: var(--main-color);
     border-radius: 0.8rem;
+    border: 0.2rem solid var(--main-color);
+    z-index: 1;
+    overflow: hidden;
     transition: 0.5s ease-in-out;
+}
+
+.scroll-top a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.scroll-top a:hover::before {
+    width: 100%;
 }
 
 .scroll-top a:hover {
@@ -828,6 +848,11 @@ span {
 .scroll-top a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+    transition: 0.5s;
+}
+
+.scroll-top a:hover i {
+    color: var(--main-color);
 }
 
 

@@ -86,7 +86,7 @@ span {
 
 /* Logo Start */
 .logo {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
@@ -232,7 +232,7 @@ span {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     /* font-weight: 500; */
     line-height: 1.8;
     /* max-width: 1000px; */
@@ -246,8 +246,8 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
     background: transparent;
     border: 2px solid var(--main-color);
     font-size: 2.5rem;
@@ -296,6 +296,7 @@ span {
 .btn-group {
     display: flex;
     align-items: center;
+    margin-top: 3rem;
     gap: 1.5rem;
 }
 
@@ -372,11 +373,12 @@ span {
 }
 
 .about-content h3 {
-    font-size: 2.6rem;
+    font-size: 3.2rem;
+    font-weight: 700;
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     margin: 2rem 0 3rem;
 }
 
@@ -1072,7 +1074,7 @@ span {
         right: 0;
         width: 50%;
         padding: 1rem 3%;
-        background: rgba(0, 0, 0, 0.8);
+        background: var(--overlay);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2px solid var(--main-color);

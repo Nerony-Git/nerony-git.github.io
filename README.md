@@ -11,6 +11,21 @@ This project is a personal portfolio page designed using **HTML**, **CSS**, and 
 - **Interactive Elements**: Hover effects and animations trigger on interaction, making the portfolio more engaging.
 - **Modern Layout with Flexbox and Grid**: The layout is structured using CSS Flexbox and Grid for clean and adaptable designs.
 
+## Screenshots
+Below are some screenshots showcasing the design and animations:
+
+### Home Page - Dark Mode (Desktop)
+![Home Page - Dark Mode (Desktop)](img/Home-Dark-Desktop.png)
+
+### Home Page - Light Mode (Desktop)
+![Home Page - Light Mode (Desktop)](img/Home-Light-Desktop.png)
+
+### Home Page - Dark Mode (Mobile)
+![Home Page - Dark Mode (Mobile)](img/Home-Dark-Mobile.png)
+
+### Home Page - Light Mode (Mobile)
+![Home Page - Light Mode (Mobile)](img/Home-Light-Mobile.png)
+
 ## Technologies Used
 - **HTML5**: For structuring the content and semantic elements.
 - **CSS3**: For styling, animations, and responsiveness.
@@ -39,8 +54,6 @@ To view the project locally:
    cd your-repository
 
 3. Open the index.html file in your preferred browser to view the project.
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
 
 ## Contributing
 Contributions are welcome! If you find a bug or have suggestions for improvements, feel free to open an issue or submit a pull request.
